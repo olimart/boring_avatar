@@ -13,6 +13,8 @@ blocks:
             - checkout
             - sem-version ruby 3.0.1
             - cache restore
-            - bundle install --deployment --path vendor/bundle
+            - bundle config set --local deployment 'true'
+            - bundle config set --local path 'vendor/bundle'
+            - bundle install
             - cache store
             - bundle exec rake

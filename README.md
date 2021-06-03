@@ -1,5 +1,7 @@
 # BoringAvatar
 
+[![Build Status](https://yafoy.semaphoreci.com/badges/boring-avatar/branches/master.svg?style=shields)](https://yafoy.semaphoreci.com/projects/boring-avatar)
+
 This is a Ruby implementation of [Boring Avatars](https://boringavatars.com)
 
 Currently only supporting the following variants:

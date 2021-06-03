@@ -1,0 +1,13 @@
+*.gem
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+.DS_Store
+*.log
+TODO.md
+.byebug_history

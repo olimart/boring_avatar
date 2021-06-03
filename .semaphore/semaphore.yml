@@ -1,0 +1,20 @@
+version: v1.0
+name: Initial Pipeline
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: CI
+    task:
+      jobs:
+        - name: Test
+          commands:
+            - checkout
+            - sem-version ruby 3.0.1
+            - cache restore
+            - bundle config set --local deployment 'true'
+            - bundle config set --local path 'vendor/bundle'
+            - bundle install
+            - cache store
+            - bundle exec rake

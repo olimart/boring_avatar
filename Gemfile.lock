@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    BoringAvatar (0.1.0)
+    boring_avatar (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -14,7 +14,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  BoringAvatar!
+  boring_avatar!
   minitest (~> 5.0)
   rake (~> 12.0)
 

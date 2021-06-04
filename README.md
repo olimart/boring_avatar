@@ -15,7 +15,7 @@ Currently only supporting the following variants:
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "BoringAvatar"
+gem "boring_avatar"
 ```
 
 And then execute:
@@ -24,7 +24,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install BoringAvatar
+    $ gem install boring_avatar
 
 ## Usage
 

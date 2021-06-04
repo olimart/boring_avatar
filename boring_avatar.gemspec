@@ -1,20 +1,20 @@
 require_relative 'lib/boring_avatar/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "BoringAvatar"
+  spec.name          = "boring_avatar"
   spec.version       = BoringAvatar::VERSION
   spec.authors       = ["Olivier"]
   spec.email         = ["olivier@yafoy.com"]
 
   spec.summary       = "Generate Boring Avatars"
-  spec.description   = "This is a simple Ruby wrapper for Boring Avatars"
-  spec.homepage      = "https://github.com/olimart/boring-avatar"
+  spec.description   = "This is a simple Ruby implementation of Boring Avatars"
+  spec.homepage      = "https://github.com/olimart/boring_avatar"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.7.0")
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/olimart/boring-avatar"
-  spec.metadata["changelog_uri"] = "https://github.com/olimart/boring-avatar/blob/master/CHANGELOG.md"
+  spec.metadata["source_code_uri"] = "https://github.com/olimart/boring_avatar"
+  spec.metadata["changelog_uri"] = "https://github.com/olimart/boring_avatar/blob/master/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

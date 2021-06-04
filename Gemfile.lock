@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    boring_avatar (0.1.0)
+    boring_avatar (0.1.1)
 
 GEM
   remote: https://rubygems.org/

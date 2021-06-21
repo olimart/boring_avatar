@@ -29,10 +29,10 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-BoringAvatar::Bauhaus.generate
-BoringAvatar::Beam.generate(name: "John Doe")
-BoringAvatar::Marble.generate(name: "John Doe", size: 40)
-BoringAvatar::Sunset.generate(name: "John Doe", size: 40, colors: %w[#a3a948 #edb92e #f85931 #ce1836 #009989])
+BoringAvatar::Bauhaus.new.generate
+BoringAvatar::Beam.new(name: "John Doe").generate
+BoringAvatar::Marble.new(name: "John Doe", size: 40).generate
+BoringAvatar::Sunset.new(name: "John Doe", size: 40, colors: %w[#a3a948 #edb92e #f85931 #ce1836 #009989]).generate
 ```
 
 There is also an [online service](https://github.com/hihayk/boring-avatars-service/) should you wish to build a wrapper around the API.

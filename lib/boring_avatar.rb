@@ -6,6 +6,7 @@ require "boring_avatar/avatar/beam"
 require "boring_avatar/avatar/bauhaus"
 require "boring_avatar/avatar/marble"
 require "boring_avatar/avatar/pixel"
+require "boring_avatar/avatar/ring"
 require "boring_avatar/avatar/sunset"
 
 module BoringAvatar

@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["olivier@yafoy.com"]
 
   spec.summary       = "Generate Boring Avatars"
-  spec.description   = "This is a simple Ruby implementation of Boring Avatars"
+  spec.description   = "This is a simple Ruby implementation of Boring Avatars library"
   spec.homepage      = "https://github.com/olimart/boring_avatar"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.7.0")

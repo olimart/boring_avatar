@@ -4,14 +4,10 @@ module BoringAvatar
   class Ring < Base
     SIZE = 90.freeze
 
-    def generate
-      template
-    end
-
     private
 
     def template
-      render_svg "<svg
+      "<svg
         viewBox='0 0 #{SIZE} #{SIZE}'
         fill='none'
         role='img'

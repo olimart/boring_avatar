@@ -5,26 +5,10 @@ module BoringAvatar
     ELEMENTS = 4.freeze
     SIZE = 80.freeze
 
-    def generate
-      template(generate_colors)
-    end
-
     private
 
-    def generate_colors
-      (0..ELEMENTS).to_a.each_with_object([]) do |i, arr|
-        arr << {
-          color: Util.get_random_color(colors, num_from_name + i, range),
-          translateX: Util.get_unit(num_from_name * (i + 1), (SIZE/2 - (i + 17)), 1),
-          translateY: Util.get_unit(num_from_name * (i + 1), (SIZE/2 - (i + 17)), 2),
-          rotate: Util.get_unit(num_from_name * (i + 1), 360),
-          isSquare: Util.get_boolean(num_from_name, 2)
-        }
-      end
-    end
-
-    def template(properties)
-      render_svg "<svg
+    def template
+      "<svg
         viewBox='0 0 #{SIZE} #{SIZE}'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
@@ -72,6 +56,18 @@ module BoringAvatar
           />
         </g>
       </svg>"
+    end
+
+    def properties
+      @properties ||= (0..ELEMENTS).to_a.each_with_object([]) do |i, arr|
+        arr << {
+          color: Util.get_random_color(colors, num_from_name + i, range),
+          translateX: Util.get_unit(num_from_name * (i + 1), (SIZE/2 - (i + 17)), 1),
+          translateY: Util.get_unit(num_from_name * (i + 1), (SIZE/2 - (i + 17)), 2),
+          rotate: Util.get_unit(num_from_name * (i + 1), 360),
+          isSquare: Util.get_boolean(num_from_name, 2)
+        }
+      end
     end
   end
 end

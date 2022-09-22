@@ -5,26 +5,10 @@ module BoringAvatar
     ELEMENTS = 3.freeze
     SIZE = 80.freeze
 
-    def generate
-      template(generate_colors)
-    end
-
     private
 
-    def generate_colors
-      (0..ELEMENTS).to_a.each_with_object([]) do |i, arr|
-        arr << {
-          color: Util.get_random_color(colors, num_from_name + i, range),
-          translateX: Util.get_unit(num_from_name * (i + 1), SIZE / 10, 1),
-          translateY: Util.get_unit(num_from_name * (i + 1), SIZE / 10, 2),
-          scale: 1.2 + (Util.get_unit(num_from_name * (i + 1), SIZE / 20.to_f) / 10),
-          rotate: Util.get_unit(num_from_name * (i + 1), 360, 1)
-        }
-      end
-    end
-
-    def template(properties)
-      render_svg "<svg
+    def template
+      "<svg
         viewBox='0 0 #{SIZE} #{SIZE}'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
@@ -73,6 +57,18 @@ module BoringAvatar
           </filter>
         </defs>
       </svg>"
+    end
+
+    def properties
+      @properties ||= (0..ELEMENTS).to_a.each_with_object([]) do |i, arr|
+        arr << {
+          color: Util.get_random_color(colors, num_from_name + i, range),
+          translateX: Util.get_unit(num_from_name * (i + 1), SIZE / 10, 1),
+          translateY: Util.get_unit(num_from_name * (i + 1), SIZE / 10, 2),
+          scale: 1.2 + (Util.get_unit(num_from_name * (i + 1), SIZE / 20.to_f) / 10),
+          rotate: Util.get_unit(num_from_name * (i + 1), 360, 1)
+        }
+      end
     end
   end
 end

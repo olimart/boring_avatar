@@ -18,10 +18,14 @@ module BoringAvatar
     end
 
     def generate
-      raise NotImplementedError
+      render_svg(template)
     end
 
     private
+
+    def template
+      raise NotImplementedError
+    end
 
     def render_svg(text)
       text

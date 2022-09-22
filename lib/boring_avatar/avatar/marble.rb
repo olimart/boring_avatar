@@ -2,8 +2,8 @@
 
 module BoringAvatar
   class Marble < Base
-    ELEMENTS = 3
-    SIZE = 80
+    ELEMENTS = 3.freeze
+    SIZE = 80.freeze
 
     def generate
       template(generate_colors)

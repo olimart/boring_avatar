@@ -2,7 +2,7 @@
 
 module BoringAvatar
   class Beam < Base
-    SIZE = 36
+    SIZE = 36.freeze
 
     def generate
       template(data)

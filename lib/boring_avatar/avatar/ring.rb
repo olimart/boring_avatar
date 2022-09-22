@@ -2,7 +2,7 @@
 
 module BoringAvatar
   class Ring < Base
-    SIZE = 90
+    SIZE = 90.freeze
 
     def generate
       template
@@ -16,9 +16,8 @@ module BoringAvatar
         fill='none'
         role='img'
         xmlns='http://www.w3.org/2000/svg'
-        width='#{SIZE}'
-        height='#{SIZE}'>
-        <title>#{name}</title>
+        width='#{size}'
+        height='#{size}'>
         <mask
           id='mask__ring'
           maskUnits='userSpaceOnUse'

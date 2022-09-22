@@ -2,9 +2,9 @@
 
 module BoringAvatar
   class Base
-    COLORS = %w[#92a1c6 #146a7c #f0ab3d #c271b4 #c20d90]
-    NAME = "Clara Barton"
-    SIZE = 40
+    COLORS = %w[#92a1c6 #146a7c #f0ab3d #c271b4 #c20d90].freeze
+    NAME = "Clara Barton".freeze
+    SIZE = 40.freeze
 
     attr_reader :colors, :name, :size, :opts, :num_from_name, :range
 

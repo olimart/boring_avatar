@@ -2,8 +2,8 @@
 
 module BoringAvatar
   class Bauhaus < Base
-    ELEMENTS = 4
-    SIZE = 80
+    ELEMENTS = 4.freeze
+    SIZE = 80.freeze
 
     def generate
       template(generate_colors)

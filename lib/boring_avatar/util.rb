@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "json"
+
 module Util
   class << self
     def get_number(name)
@@ -32,6 +34,16 @@ module Util
       red, green, blue = hex.delete_prefix("#").scan(/../).map { |c| c.to_i(16) }
       yiq = ((red * 299) + (green * 587) + (blue * 114)) / 1000
       yiq > 128 ? "black" : "white"
+    end
+
+    def random_palette
+      color_palettes[(0..99).to_a.sample]
+    end
+
+    private
+
+    def color_palettes
+      @color_palettes ||= JSON.parse(File.read("./color_palettes.json"))
     end
   end
 end

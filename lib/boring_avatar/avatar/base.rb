@@ -9,7 +9,7 @@ module BoringAvatar
     attr_reader :colors, :name, :size, :opts, :num_from_name, :range
 
     def initialize(colors: COLORS, name: NAME, size: SIZE, **opts)
-      @colors = colors
+      @colors = colors == "random" ? Util.random_palette : colors
       @name = name
       @size = size
       @opts = opts

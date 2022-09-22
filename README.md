@@ -8,6 +8,7 @@ Currently only supporting the following variants:
 - Bauhaus
 - Beam
 - Marble
+- Ring
 - Sunset
 
 ## Installation
@@ -31,6 +32,7 @@ Or install it yourself as:
 ```ruby
 BoringAvatar::Bauhaus.new.generate
 BoringAvatar::Beam.new(name: "John Doe").generate
+BoringAvatar::Beam.new(colors: "random").generate
 BoringAvatar::Marble.new(name: "John Doe", size: 40).generate
 BoringAvatar::Sunset.new(name: "John Doe", size: 40, colors: %w[#a3a948 #edb92e #f85931 #ce1836 #009989]).generate
 ```
@@ -45,8 +47,10 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/BoringAvatar.
+Bug reports and pull requests are welcome on GitHub at https://github.com/olimart/boring_avatar.
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+Color palettes from [Nice color palettes](https://github.com/Jam3/nice-color-palettes/) 

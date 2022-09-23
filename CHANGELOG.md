@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1 / 2022-09-23
+
+- Fix loading file issue
+
 ## 1.0.0 / 2022-09-22
 
 - Added ring type

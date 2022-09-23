@@ -43,7 +43,11 @@ module Util
     private
 
     def color_palettes
-      @color_palettes ||= JSON.parse(File.read("./color_palettes.json"))
+      @color_palettes ||= JSON.parse(File.read(palettes_file))
+    end
+
+    def palettes_file
+      File.dirname(__FILE__) + "/../../color_palettes.json"
     end
   end
 end

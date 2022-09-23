@@ -5,6 +5,10 @@ class BoringAvatar::BauhausTest < Minitest::Test
     assert_equal result, BoringAvatar::Bauhaus.new.generate
   end
 
+  def test_random_colours
+    assert_match /svg viewBox/i, BoringAvatar::Bauhaus.new(colors: "random").generate
+  end
+
   private
 
   def result

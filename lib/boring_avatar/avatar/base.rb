@@ -9,9 +9,16 @@ module BoringAvatar
     attr_reader :colors, :name, :size, :opts, :num_from_name, :range
 
     def initialize(colors: COLORS, name: NAME, size: SIZE, **opts)
-      @colors = colors == "random" ? Util.random_palette : colors
+      @colors = case
+      when colors == "random"
+        Util.random_palette
+      when colors.nil? || colors.empty?
+        COLORS
+      else
+        colors
+      end
       @name = name
-      @size = size
+      @size = size.nil? ? SIZE : size
       @opts = opts
       @num_from_name = Util.get_number(name)
       @range = colors.length

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    boring_avatar (1.0.1)
+    boring_avatar (1.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -21,4 +21,4 @@ DEPENDENCIES
   rake (~> 12.0)
 
 BUNDLED WITH
-   2.3.20
+   2.3.25

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0 / 2023-06-27
+
+- Ensure default options are set when nil
+
 ## 1.0.1 / 2022-09-23
 
 - Fix loading file issue

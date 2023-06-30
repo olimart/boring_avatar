@@ -10,6 +10,7 @@ blocks:
       jobs:
         - name: Test
           commands:
+            - '# testing'
             - checkout
             - sem-version ruby 3.2.2
             - cache restore

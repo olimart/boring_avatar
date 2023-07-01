@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1 / 2023-06-30
+
+- Fix for Beam avatar when random color was nil
+
 ## 1.1.0 / 2023-06-27
 
 - Ensure default options are set when nil

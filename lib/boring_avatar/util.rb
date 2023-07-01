@@ -11,7 +11,7 @@ module Util
     end
 
     def get_random_color(colors, number, range)
-      colors[number % range]
+      colors[number % range] || colors.last
     end
 
     def get_unit(number, range, index = nil)

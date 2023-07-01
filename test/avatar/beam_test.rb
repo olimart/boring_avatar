@@ -5,6 +5,10 @@ class BoringAvatar::BeamTest < Minitest::Test
     assert_equal result, BoringAvatar::Beam.new.generate
   end
 
+  def test_it_renders_svg_with_options
+    assert_match /svg viewBox/i, BoringAvatar::Beam.new(name: "Octavio Yundt", colors: "random").generate
+  end
+
   private
 
   def result

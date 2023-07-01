@@ -21,7 +21,7 @@ module BoringAvatar
       @size = size.nil? ? SIZE : size
       @opts = opts
       @num_from_name = Util.get_number(name)
-      @range = colors.length
+      @range = @colors.length
     end
 
     def generate

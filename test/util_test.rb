@@ -2,7 +2,7 @@ require "test_helper"
 
 class UtilTest < Minitest::Test
   def test_that_it_sums_up_byte16_value_of_each_character
-    assert_equal 1129, Util.get_number("Clara Barton")
+    assert_equal 645088871, Util.get_number("Clara Barton")
   end
 
   def test_that_it_gets_random_color_from_list

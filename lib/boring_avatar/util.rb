@@ -4,10 +4,11 @@ require "json"
 
 module Util
   class << self
-    def get_number(name)
-      name.chars
-        .map(&:ord)
-        .inject(:+)
+    def get_number(string)
+      string.chars.reduce(0) do |sum, char|
+        sum = (sum << 5) - sum + char.ord
+        [sum].pack("L").unpack("l").first
+      end.abs
     end
 
     def get_random_color(colors, number, range)

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0 / 2024-08-02
+
+- Use same number generation algorithm as JS implementation by @andriusch
+
 ## 1.1.1 / 2023-06-30
 
 - Fix for Beam avatar when random color was nil
